@@ -1,0 +1,112 @@
+#hero {
+  width: 100%;
+  height: 92vh;
+
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/dr_strange.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+#hero h2 {
+  margin-top: -5%;
+  color: rgb(52, 208, 208);
+  font-size: 3.5vw;
+  text-transform: capitalize;
+}
+
+#hero h3 {
+  font-size: 1.2vw;
+  color: whitesmoke;
+  padding: 1% 0;
+  width: 32%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+#hero .watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .watch svg {
+  width: 4vw;
+  height: 4vw;
+  color: rgb(52, 208, 208);
+  padding-right: 5%;
+}
+
+#hero .watch h3 {
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+#popular {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 2% 5%;
+}
+
+#popular .item {
+  position: relative;
+  margin: 2% 1%;
+  border-radius: 1vw;
+  box-shadow: 0.05vw 0.5vw 0.5vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+#popular .item img {
+  width: 17vw;
+  border-radius: 1vw;
+}
+
+#popular .item .info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  padding: 7%;
+  z-index: 2;
+  border-radius: 0 0 1vw 1vw;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(50, 60, 76, 0) 0%,
+    rgba(50, 60, 76, 1) 85%
+  );
+  color: #fff;
+
+  /* margin-top: -5%;
+  margin-left: 5%; */
+}
+
+#popular .item .info h3 {
+  font-size: 1.2vw;
+}
+
+#popular .item .info a {
+  text-decoration: none;
+  margin-top: 7%;
+  padding: 3% 7%;
+  color: #fff;
+  background-color: rgb(52, 208, 208);
+  border-radius: 1vw;
+  font-size: 0.7vw;
+}
