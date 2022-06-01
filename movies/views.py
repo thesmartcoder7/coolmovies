@@ -40,10 +40,12 @@ def movies(request):
     result = get_trending()
     random.shuffle(result)
     selected = result[0]
+    if len(result) > 10
     key = get_trailer(selected.id)
     
     context = {
         'trending': selected,
-        'trailer': key
+        'trailer': key,
+        'everything': result
     }
     return render(request, 'movies/everything.html', context)
