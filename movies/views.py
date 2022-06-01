@@ -43,6 +43,19 @@ def get_trailer(id):
                 return video_key
 
 
+def get_top_shows():
+    response = requests.get(url='https://api.themoviedb.org/3/tv/top_rated?api_key=b7c72ad37773a8eb3a0254f31fafb0fd&language=en-US&page=1')
+    response.raise_for_status()
+    mixed = response.json()['results']
+    results = []
+    if mixed:
+        for item in mixed:
+            if item.get('title') and item.get('id') and item.get('overview') and item.get('poster_path') and item.get('backdrop_path'):
+                new = Trending(item.get('title'), item.get('id'), item.get('overview'), item.get('poster_path'), item.get('backdrop_path'))
+                results.append(new)
+    return results
+
+
 # Create your views here.
 def home(request):
     return render(request, 'movies/index.html')
