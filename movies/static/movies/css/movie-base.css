@@ -24,7 +24,6 @@ body {
 
 main {
   width: 100%;
-  padding: 3%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +37,31 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-main header {
+main #hero {
+  padding: 3%;
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  position: relative;
+}
+
+main #hero header {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,7 +74,7 @@ main header {
           justify-content: space-between;
 }
 
-main header .left {
+main #hero header .left {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,19 +87,19 @@ main header .left {
           justify-content: flex-start;
 }
 
-main header .left .logo {
+main #hero header .left .logo {
   width: 25%;
 }
 
-main header .left .logo img {
+main #hero header .left .logo img {
   width: 8vw;
 }
 
-main header .left .nav {
+main #hero header .left .nav {
   width: 75%;
 }
 
-main header .left .nav ul {
+main #hero header .left .nav ul {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,11 +113,11 @@ main header .left .nav ul {
   list-style: none;
 }
 
-main header .left .nav ul li {
+main #hero header .left .nav ul li {
   margin: 0 4%;
 }
 
-main header .left .nav ul li a {
+main #hero header .left .nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 0.9vw;
@@ -102,11 +125,11 @@ main header .left .nav ul li a {
   letter-spacing: 0.05vw;
 }
 
-main header .left .nav ul li a:hover {
+main #hero header .left .nav ul li a:hover {
   color: #e50914;
 }
 
-main header .right {
+main #hero header .right {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,7 +142,7 @@ main header .right {
           justify-content: flex-end;
 }
 
-main header .right .search {
+main #hero header .right .search {
   margin-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,7 +155,7 @@ main header .right .search {
           justify-content: flex-end;
 }
 
-main header .right .search form {
+main #hero header .right .search form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,35 +167,35 @@ main header .right .search form {
           justify-content: flex-end;
 }
 
-main header .right .search form input {
+main #hero header .right .search form input {
   background-color: transparent;
   outline: none;
   border: none;
-  border-bottom: solid 0.1vw #fff;
+  border-bottom: solid 0.05vw #fff;
   padding: 3% 2%;
   color: #fff;
   font-size: 0.9vw;
 }
 
-main header .right .search form button {
+main #hero header .right .search form button {
   background-color: transparent;
   outline: none;
   border: none;
   margin-right: 5%;
 }
 
-main header .right .search form button svg {
+main #hero header .right .search form button svg {
   color: #fff;
   width: 1.5vw;
   height: 1.5vw;
   cursor: pointer;
 }
 
-main header .right .search form button svg:hover {
+main #hero header .right .search form button svg:hover {
   color: #e50914;
 }
 
-main header .right .user {
+main #hero header .right .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,12 +207,12 @@ main header .right .user {
           justify-content: flex-end;
 }
 
-main header .right .user .username {
+main #hero header .right .user .username {
   color: #fff;
   margin-right: 15%;
 }
 
-main header .right .user .username p {
+main #hero header .right .user .username p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,19 +222,101 @@ main header .right .user .username p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-size: 0.9vw;
 }
 
-main header .right .user .username p span {
+main #hero header .right .user .username p span {
   margin-right: 15%;
 }
 
-main header .right .user .username p a {
+main #hero header .right .user .username p a {
   text-decoration: none;
   color: #e50914;
+  font-weight: 600;
 }
 
-main header .right .user .avatar img {
+main #hero header .right .user .username p a:hover {
+  color: #e50914c7;
+}
+
+main #hero header .right .user .avatar img {
   width: 3vw;
   border-radius: 50%;
+}
+
+main #hero .hero-content {
+  padding: 8% 5%;
+  color: #fff;
+}
+
+main #hero .hero-content h1 {
+  width: 70%;
+  font-size: 3.8vw;
+}
+
+main #hero .hero-content h2 {
+  margin-top: 2%;
+  width: 50%;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 2.5vw;
+}
+
+main #hero .hero-content .buttons {
+  margin-top: 2%;
+}
+
+main #hero .hero-content .buttons button,
+main #hero .hero-content .buttons a {
+  background-color: #e50914;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 0.85vw;
+  color: #fff;
+  padding: 1% 2%;
+  margin-right: 2%;
+  cursor: pointer;
+  border-radius: 0.3vw;
+}
+
+main #hero .hero-content .buttons button:hover,
+main #hero .hero-content .buttons a:hover {
+  background-color: #e50914c7;
+}
+
+main #hero .trending-modal {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  margin-top: -3%;
+  background-color: rgba(0, 0, 0, 0.479);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+main #hero .trending-modal .close {
+  color: #e50914;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  cursor: pointer;
+}
+
+main #hero .trending-modal .close:hover {
+  color: #e50914c7;
+}
+
+main #hero .trending-modal .close svg {
+  width: 3vw;
 }
 /*# sourceMappingURL=movie-base.css.map */

@@ -16,54 +16,87 @@
   </head>
   <body>
     <main>
-      <header>
-        <div class="left">
-          <div class="logo">
-            <a href="">
-              <img
-                src="{% static 'movies/images/netflix-logo.png' %}"
-                alt="netflix-logo"
-              />
-            </a>
+      <section
+        id="hero"
+        style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('{{trending.backdrop}}');"
+      >
+        <header>
+          <div class="left">
+            <div class="logo">
+              <a href="">
+                <img
+                  src="{% static 'movies/images/netflix-logo.png' %}"
+                  alt="netflix-logo"
+                />
+              </a>
+            </div>
+            <div class="nav">
+              <ul>
+                <li><a href="">Movies</a></li>
+                <li><a href="">Series</a></li>
+                <li><a href="">My List</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="nav">
-            <ul>
-              <li><a href="">Movies</a></li>
-              <li><a href="">Series</a></li>
-              <li><a href="">My List</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="right">
-          <div class="search">
-            <form>
-              <input type="text" placeholder="Search" name="search" />
-              <button type="submit">
-                <svg aria-hidden="true" role="img" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"
-                  />
-                </svg>
-              </button>
-            </form>
-          </div>
+          <div class="right">
+            <div class="search">
+              <form>
+                <input type="text" placeholder="Search" name="search" />
+                <button type="submit">
+                  <svg aria-hidden="true" role="img" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
 
-          <div class="user">
-            <div class="username">
-              <p>
-                <span>Username</span>
-                <a href="">Logout</a>
-              </p>
-            </div>
-            <div class="avatar">
-              <img src="{% static 'movies/images/sam.jpeg' %}" alt="username" />
+            <div class="user">
+              <div class="username">
+                <p>
+                  <span>Username</span>
+                  <a href="">Logout</a>
+                </p>
+              </div>
+              <div class="avatar">
+                <img
+                  src="{% static 'movies/images/sam.jpeg' %}"
+                  alt="username"
+                />
+              </div>
             </div>
           </div>
+        </header>
+        <div class="hero-content">
+          <h1>{{trending.name}}</h1>
+          <h2>{{trending.overview}}</h2>
+          <div class="buttons">
+            <button class="trailer">Watch Trailer</button>
+            <a href="">View Details</a>
+          </div>
         </div>
-      </header>
+        <div class="trending-modal">
+          <p class="close">
+            <svg aria-hidden="true" role="img" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M12 22A9.99 9.99 0 0 1 2 12v-.2a10.005 10.005 0 0 1 17.074-6.874A10 10 0 0 1 12 22Zm0-8.59L14.59 16L16 14.59L13.41 12L16 9.41L14.59 8L12 10.59L9.41 8L8 9.41L10.59 12L8 14.59L9.41 16L12 13.411v-.001Z"
+              />
+            </svg>
+          </p>
+          <div id="player">
+            {% if trailer %}
+            <p class="video-key">{{trailer}}</p>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+
       {% block content %}{% endblock %}
       <footer></footer>
     </main>
+    <script src="{% static 'movies/js/movies.js' %}"></script>
   </body>
 </html>
