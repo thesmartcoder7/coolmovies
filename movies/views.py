@@ -4,3 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
     return render(request, 'movies/index.html')
+
+
+def movies(request):
+    return render(request, 'movies/movie-base.html')

@@ -1,0 +1,137 @@
+@import "global";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/netflix-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  padding: 3%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .logo {
+        width: 25%;
+        img {
+          width: 8vw;
+        }
+      }
+      .nav {
+        width: 75%;
+        ul {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          list-style: none;
+          li {
+            margin: 0 4%;
+            a {
+              text-decoration: none;
+              color: $text_color;
+              font-size: 0.9vw;
+              font-weight: 500;
+              letter-spacing: 0.05vw;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .search {
+        margin-right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        form {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          input {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: solid 0.1vw $text_color;
+            padding: 3% 2%;
+            color: $text_color;
+            font-size: 0.9vw;
+          }
+          button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin-right: 5%;
+            svg {
+              color: $text_color;
+              width: 1.5vw;
+              height: 1.5vw;
+              cursor: pointer;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .username {
+          color: $text_color;
+          margin-right: 15%;
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            span {
+              margin-right: 15%;
+            }
+            a {
+              text-decoration: none;
+              color: $primary;
+            }
+          }
+        }
+        .avatar {
+          img {
+            width: 3vw;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

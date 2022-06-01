@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/netflix-background.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netflix-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  padding: 3%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+main header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header .left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main header .left .logo {
+  width: 25%;
+}
+
+main header .left .logo img {
+  width: 8vw;
+}
+
+main header .left .nav {
+  width: 75%;
+}
+
+main header .left .nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+}
+
+main header .left .nav ul li {
+  margin: 0 4%;
+}
+
+main header .left .nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: 500;
+  letter-spacing: 0.05vw;
+}
+
+main header .left .nav ul li a:hover {
+  color: #e50914;
+}
+
+main header .right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main header .right .search {
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main header .right .search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main header .right .search form input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 0.1vw #fff;
+  padding: 3% 2%;
+  color: #fff;
+  font-size: 0.9vw;
+}
+
+main header .right .search form button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-right: 5%;
+}
+
+main header .right .search form button svg {
+  color: #fff;
+  width: 1.5vw;
+  height: 1.5vw;
+  cursor: pointer;
+}
+
+main header .right .search form button svg:hover {
+  color: #e50914;
+}
+
+main header .right .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main header .right .user .username {
+  color: #fff;
+  margin-right: 15%;
+}
+
+main header .right .user .username p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main header .right .user .username p span {
+  margin-right: 15%;
+}
+
+main header .right .user .username p a {
+  text-decoration: none;
+  color: #e50914;
+}
+
+main header .right .user .avatar img {
+  width: 3vw;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=movie-base.css.map */

@@ -16,13 +16,54 @@
   </head>
   <body>
     <main>
-      <div class="cta">
-        <h1>Unlimited movies, TV shows, and more.</h1>
-        <div class="sign-in-up">
-          <a href="{% url 'users_login' %}">sign in</a>
-          <a href="{% url 'users_login' %}">sign up</a>
+      <header>
+        <div class="left">
+          <div class="logo">
+            <a href="">
+              <img
+                src="{% static 'movies/images/netflix-logo.png' %}"
+                alt="netflix-logo"
+              />
+            </a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="">Movies</a></li>
+              <li><a href="">Series</a></li>
+              <li><a href="">My List</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+        <div class="right">
+          <div class="search">
+            <form>
+              <input type="text" placeholder="Search" name="search" />
+              <button type="submit">
+                <svg aria-hidden="true" role="img" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="user">
+            <div class="username">
+              <p>
+                <span>Username</span>
+                <a href="">Logout</a>
+              </p>
+            </div>
+            <div class="avatar">
+              <img src="{% static 'movies/images/sam.jpeg' %}" alt="username" />
+            </div>
+          </div>
+        </div>
+      </header>
+      {% block content %}{% endblock %}
+      <footer></footer>
     </main>
   </body>
 </html>
