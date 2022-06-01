@@ -5,22 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'movies/css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'users/css/login-logout.css' %}" />
     <link
       rel="shortcut icon"
       href="{% static 'movies/images/netflix.png' %}"
       type="image/x-icon"
     />
-    <title>Netflix</title>
+    <title>Sign Up</title>
   </head>
   <body>
     <main>
-      <div class="cta">
-        <h1>Unlimited movies, TV shows, and more.</h1>
-        <div class="sign-in-up">
-          <a href="{% url 'users_login' %}">sign in</a>
-          <a href="">sign up</a>
-        </div>
+      <div>
+        <h1>Create an Account</h1>
+        <form method="post">
+          {% csrf_token %}
+          <!--  -->
+          {{form.as_p}}
+          <input type="submit" value="Submit" />
+        </form>
+        <p>
+          Already have an account? <span><a href="">Sign In</a></span>
+        </p>
       </div>
     </main>
   </body>
