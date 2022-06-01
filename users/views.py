@@ -1,7 +1,5 @@
-from pyexpat.errors import messages
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render,redirect
+from .forms import UserSignupForm
 from django.contrib import messages
 
 
@@ -14,13 +12,15 @@ def login(request):
 def signup(request):
     if request.method == 'POST':
         print('\n\n the code gets inside post check \n\n')
-        form = UserCreationForm(request.POST)
+        form = UserSignupForm(request.POST)
         if form.is_valid():
             print('\n\n the code gets inside the if valid function \n\n')
             username = form.cleaned_data.get('username')
-            # form.save()
+            form.save()
             messages.success(request, f"Thank you, {username}. Your accout has been successfuly created! Login to continue...")
             return redirect('users_login')
+        else:
+            return render(request, 'users/signup.html', {'form': form})
     else:
-        form = UserCreationForm()
-    return render(request, 'users/signup.html', {'form': form})
+        form = UserSignupForm()
+        return render(request, 'users/signup.html', {'form': form})
