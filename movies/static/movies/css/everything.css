@@ -324,13 +324,15 @@ main #hero .trending-modal .close svg {
   width: 3vw;
 }
 
-main #everything {
+main #everything,
+main #upcoming {
   width: 100%;
   padding: 3% 7%;
   background-color: #000;
 }
 
-main #everything .category {
+main #everything .category,
+main #upcoming .category {
   width: 100%;
   height: 5vw;
   margin-bottom: 1%;
@@ -346,7 +348,8 @@ main #everything .category {
   color: #fff;
 }
 
-main #everything .category hr {
+main #everything .category hr,
+main #upcoming .category hr {
   width: 3vw;
   margin-right: 2%;
   outline: none;
@@ -356,11 +359,13 @@ main #everything .category hr {
   background-color: #e50914;
 }
 
-main #everything .category h3 {
+main #everything .category h3,
+main #upcoming .category h3 {
   font-size: 1.3vw;
 }
 
-main #everything .films {
+main #everything .films,
+main #upcoming .films {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,7 +384,8 @@ main #everything .films {
       flex-wrap: wrap;
 }
 
-main #everything .films .card {
+main #everything .films .card,
+main #upcoming .films .card {
   width: 17%;
   margin: 2% 0;
   margin-right: 3%;
@@ -401,18 +407,21 @@ main #everything .films .card {
      object-fit: cover;
 }
 
-main #everything .films .card a {
+main #everything .films .card a,
+main #upcoming .films .card a {
   text-decoration: none;
   color: #fff;
   text-transform: capitalize;
   text-align: center;
 }
 
-main #everything .films .card a:hover {
+main #everything .films .card a:hover,
+main #upcoming .films .card a:hover {
   color: #e50914;
 }
 
-main #everything .films .card a img {
+main #everything .films .card a img,
+main #upcoming .films .card a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -421,13 +430,15 @@ main #everything .films .card a img {
   transition: 0.3s ease-in-out;
 }
 
-main #everything .films .card a img:hover {
+main #everything .films .card a img:hover,
+main #upcoming .films .card a img:hover {
   margin-top: -3%;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
-main #everything .films .card a h3 {
+main #everything .films .card a h3,
+main #upcoming .films .card a h3 {
   margin-top: 5%;
   font-size: 0.85vw;
   line-height: 1vw;

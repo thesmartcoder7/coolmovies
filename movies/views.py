@@ -17,8 +17,8 @@ def get_trending():
     return results
 
 
-def get_latest():
-    response = requests.get(url='https://api.themoviedb.org/3/movie/latest?api_key=b7c72ad37773a8eb3a0254f31fafb0fd')
+def get_upcoming():
+    response = requests.get(url='https://api.themoviedb.org/3/movie/upcoming?api_key=b7c72ad37773a8eb3a0254f31fafb0fd&language=en-US&page=1')
     response.raise_for_status()
     mixed = response.json()['results']
     results = []
@@ -50,18 +50,23 @@ def home(request):
 
 def movies(request):
     result = get_trending()
-    latest = get_latest()
+    almost = get_upcoming()
+    upcoming = []
+    
     random.shuffle(result)
     selected = result[0]
     key = get_trailer(selected.id)
     everything = []
     for i in range(11):
         everything.append(result[i])
+
+    for i in range(10):
+        upcoming.append(almost[i])
     
     context = {
         'trending': selected,
         'trailer': key,
         'everything': everything,
-        'latest': latest
+        'upcoming': upcoming
     }
     return render(request, 'movies/everything.html', context)

@@ -32,7 +32,7 @@
             <div class="nav">
               <ul>
                 <li><a href="">Movies</a></li>
-                <li><a href="">Tv Shows</a></li>
+                <li><a href="">TV Shows</a></li>
                 <li><a href="">My List</a></li>
               </ul>
             </div>
@@ -92,6 +92,8 @@
           </div>
         </div>
       </section>
+
+      <!-- everything section -->
       <section id="everything">
         <div class="category">
           <hr />
@@ -101,6 +103,32 @@
           {% if everything %}
           <!--  -->
           {% for item in everything %}
+          <!--  -->
+          {% if item.id != trending.id %}
+          <div class="card">
+            <a href="">
+              <img src="{{item.poster}}" alt="{{item.name}}" />
+              <h3>{{item.name}}</h3>
+            </a>
+          </div>
+          {% endif %}
+          <!--  -->
+          {% endfor %}
+          <!--  -->
+          {% endif %}
+        </div>
+      </section>
+
+      <!-- upcoming movies section -->
+      <section id="upcoming">
+        <div class="category">
+          <hr />
+          <h3>Upcoiming &nbsp; Movies</h3>
+        </div>
+        <div class="films">
+          {% if upcoming %}
+          <!--  -->
+          {% for item in upcoming %}
           <!--  -->
           {% if item.id != trending.id %}
           <div class="card">
