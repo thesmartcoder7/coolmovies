@@ -46,4 +46,4 @@ def movies(request):
         'trending': selected,
         'trailer': key
     }
-    return render(request, 'movies/movie-base.html', context)
+    return render(request, 'movies/everything.html', context)
