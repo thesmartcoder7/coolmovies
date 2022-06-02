@@ -46,6 +46,11 @@ main .main-content {
   border-radius: 0.7vw;
 }
 
+main .main-content p {
+  font-size: 0.9vw;
+  line-height: 1.2vw;
+}
+
 main .main-content h1 {
   width: 100%;
   text-align: center;

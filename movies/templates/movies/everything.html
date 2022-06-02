@@ -60,10 +60,7 @@
                 </p>
               </div>
               <div class="avatar">
-                <img
-                  src="{% static 'movies/images/sam.jpeg' %}"
-                  alt="username"
-                />
+                <img src="{{user.profile.image.url}}" alt="{{user.username}}" />
               </div>
             </div>
           </div>

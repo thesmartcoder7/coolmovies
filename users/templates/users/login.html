@@ -17,14 +17,15 @@
   </head>
   <body>
     <main>
-      {% if messages %}
-      <!--  -->
-      {% for message in messages %}
-      <p>{{message}}</p>
-      {% endfor %}
-      <!--  -->
-      {% endif %}
       <div class="main-content">
+        {% if messages %}
+        <!--  -->
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+        <!--  -->
+        {% endif %}
+        <br />
         <h1>Sign into Your Account</h1>
         <form method="post">
           {% csrf_token %}
