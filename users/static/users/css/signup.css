@@ -43,17 +43,22 @@ main .main-content {
   margin-top: -4%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 3% 5%;
-  border-radius: 1vw;
+  border-radius: 0.7vw;
 }
 
 main .main-content h1 {
   width: 100%;
   text-align: center;
   margin-bottom: 10%;
+  font-size: 1.3vw;
 }
 
 main .main-content form {
   width: 100%;
+}
+
+main .main-content form label {
+  text-transform: capitalize;
 }
 
 main .main-content form input {
@@ -72,6 +77,11 @@ main .main-content form input.submit {
   background-color: #e50914;
   font-size: 0.9vw;
   font-weight: 600;
+  cursor: pointer;
+}
+
+main .main-content form input.submit:hover {
+  background-color: #e50914c7;
 }
 
 main .main-content form div {
@@ -79,11 +89,9 @@ main .main-content form div {
   margin: 5% 0;
 }
 
-main .main-content form div .help-block {
-  display: none;
-}
-
-main .main-content form div ul {
+main .main-content form div .controls #hint_id_username,
+main .main-content form div .controls #hint_id_password2,
+main .main-content form div .controls ul {
   display: none;
 }
 

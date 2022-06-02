@@ -5,10 +5,6 @@ from django.contrib import messages
 
 # Create your views here.
 
-def login(request):
-    return render(request, 'users/login.html')
-
-
 def signup(request):
     if request.method == 'POST':
         print('\n\n the code gets inside post check \n\n')

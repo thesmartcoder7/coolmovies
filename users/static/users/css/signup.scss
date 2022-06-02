@@ -28,14 +28,18 @@ main {
     margin-top: -4%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 3% 5%;
-    border-radius: 1vw;
+    border-radius: 0.7vw;
     h1 {
       width: 100%;
       text-align: center;
       margin-bottom: 10%;
+      font-size: 1.3vw;
     }
     form {
       width: 100%;
+      label {
+        text-transform: capitalize;
+      }
       input {
         background-color: #333333;
         padding: 4% 5%;
@@ -50,16 +54,24 @@ main {
           background-color: $primary;
           font-size: 0.9vw;
           font-weight: 600;
+          cursor: pointer;
+          &:hover {
+            background-color: $secondary;
+          }
         }
       }
       div {
         width: 100%;
         margin: 5% 0;
-        .help-block {
-          display: none;
-        }
-        ul {
-          display: none;
+        // .help-block {
+        //   display: none;
+        // }
+        .controls {
+          #hint_id_username,
+          #hint_id_password2,
+          ul {
+            display: none;
+          }
         }
       }
     }
