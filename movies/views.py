@@ -16,23 +16,31 @@ def movies(request):
     almost = get_upcoming_movies()
     all_popular = get_popular_shows()
     all_onair = get_shows_onair()
+
     upcoming = []
     popular = []
     on_air = []
+    everything = []
+
     random.shuffle(result)
     random.shuffle(almost)
     random.shuffle(all_popular)
     random.shuffle(all_onair)
+
     selected = result[0]
     key = get_trailer(selected.id)
-    everything = []
+    
     for i in range(13):
         everything.append(result[i])
 
     for i in range(12):
-        upcoming.append(almost[i])
         popular.append(all_popular[i])
-        on_air.append(all_onair[i])
+        if almost[i] not in everything:
+            upcoming.append(almost[i])
+    
+    for i in range(12):
+        if all_onair[i] not in all_popular:
+            on_air.append(all_onair[i])
     
     context = {
         'trending': selected,
