@@ -399,9 +399,8 @@ main #upcoming .films {
 
 main #everything .films .card,
 main #upcoming .films .card {
-  width: 17%;
-  margin: 2% 0;
-  margin-right: 3%;
+  width: 13.5%;
+  margin: 2% 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,9 +411,9 @@ main #upcoming .films .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-radius: 0.5vw;
   -o-object-fit: cover;
      object-fit: cover;

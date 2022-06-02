@@ -11,7 +11,7 @@
       href="{% static 'movies/images/netflix.png' %}"
       type="image/x-icon"
     />
-    <title>Home</title>
+    <title>Netflix</title>
   </head>
   <body>
     <main>
@@ -55,7 +55,7 @@
             <div class="user">
               <div class="username">
                 <p>
-                  <span>Hi {{user.username}},</span>
+                  <span>Hi &nbsp;{{user.username}},</span>
                   <a href="{% url 'users_logout' %}">Logout</a>
                 </p>
               </div>
@@ -97,7 +97,7 @@
       <section id="everything">
         <div class="category">
           <hr />
-          <h3>Trending</h3>
+          <h3>Trending &nbsp; Movies</h3>
         </div>
         <div class="films">
           {% if everything %}

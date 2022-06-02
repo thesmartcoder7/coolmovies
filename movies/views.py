@@ -20,10 +20,10 @@ def movies(request):
     selected = result[0]
     key = get_trailer(selected.id)
     everything = []
-    for i in range(11):
+    for i in range(13):
         everything.append(result[i])
 
-    for i in range(10):
+    for i in range(12):
         upcoming.append(almost[i])
     
     context = {
