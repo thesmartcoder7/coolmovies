@@ -79,12 +79,12 @@ main {
       }
 
       .right {
-        width: 50%;
+        width: 35%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         .search {
-          width: 35%;
+          width: auto;
           margin-top: -2%;
           display: flex;
           align-items: center;
@@ -299,6 +299,47 @@ main {
             font-weight: 500;
           }
         }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    background-color: #000;
+    padding: 5% 7%;
+    hr {
+      outline: none;
+      border: none;
+      height: 0.1vw;
+      background-color: rgb(31, 31, 31);
+      margin: 7% 0 3% 0;
+    }
+    .main {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        width: 25%;
+        img {
+          width: 7vw;
+        }
+        p {
+          font-size: 0.9vw;
+          color: $text_color;
+          text-align: justify;
+          text-transform: capitalize;
+          margin: 5% 0;
+        }
+      }
+    }
+
+    .copyright {
+      padding-top: 2%;
+      text-align: center;
+      color: $text_color;
+      .year {
+        color: $text_color;
       }
     }
   }

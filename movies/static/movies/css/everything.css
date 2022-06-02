@@ -134,7 +134,7 @@ main #hero header .left .nav ul li a:hover {
 }
 
 main #hero header .right {
-  width: 50%;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,7 @@ main #hero header .right {
 }
 
 main #hero header .right .search {
-  width: 35%;
+  width: auto;
   margin-top: -2%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,5 +477,58 @@ main #popular .films .card a h3 {
   font-size: 0.85vw;
   line-height: 1vw;
   font-weight: 500;
+}
+
+main footer {
+  width: 100%;
+  background-color: #000;
+  padding: 5% 7%;
+}
+
+main footer hr {
+  outline: none;
+  border: none;
+  height: 0.1vw;
+  background-color: #1f1f1f;
+  margin: 7% 0 3% 0;
+}
+
+main footer .main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main footer .main div {
+  width: 25%;
+}
+
+main footer .main div img {
+  width: 7vw;
+}
+
+main footer .main div p {
+  font-size: 0.9vw;
+  color: #fff;
+  text-align: justify;
+  text-transform: capitalize;
+  margin: 5% 0;
+}
+
+main footer .copyright {
+  padding-top: 2%;
+  text-align: center;
+  color: #fff;
+}
+
+main footer .copyright .year {
+  color: #fff;
 }
 /*# sourceMappingURL=everything.css.map */
