@@ -4,7 +4,7 @@ from dotenv import load_dotenv, find_dotenv
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 import random
-from .models import Trending
+from .models import Movie
 
 
 
@@ -21,7 +21,7 @@ def get_trending():
     if mixed:
         for item in mixed:
             if item.get('title') and item.get('id') and item.get('overview') and item.get('poster_path') and item.get('backdrop_path'):
-                new = Trending(item.get('title'), item.get('id'), item.get('overview'), item.get('poster_path'), item.get('backdrop_path'))
+                new = Movie(item.get('title'), item.get('id'), item.get('overview'), item.get('poster_path'), item.get('backdrop_path'))
                 results.append(new)
     return results
 
@@ -34,7 +34,7 @@ def get_upcoming():
     if mixed:
         for item in mixed:
             if item.get('title') and item.get('id') and item.get('overview') and item.get('poster_path') and item.get('backdrop_path'):
-                new = Trending(item.get('title'), item.get('id'), item.get('overview'), item.get('poster_path'), item.get('backdrop_path'))
+                new = Movie(item.get('title'), item.get('id'), item.get('overview'), item.get('poster_path'), item.get('backdrop_path'))
                 results.append(new)
     return results
 
@@ -60,7 +60,7 @@ def get_top_shows():
     if mixed:
         for item in mixed:
             if item.get('title') and item.get('id') and item.get('overview') and item.get('poster_path') and item.get('backdrop_path'):
-                new = Trending(item.get('title'), item.get('id'), item.get('overview'), item.get('poster_path'), item.get('backdrop_path'))
+                new = Movie(item.get('title'), item.get('id'), item.get('overview'), item.get('poster_path'), item.get('backdrop_path'))
                 results.append(new)
     return results
 

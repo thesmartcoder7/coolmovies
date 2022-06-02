@@ -108,6 +108,8 @@ main {
               outline: none;
               border: none;
               margin-right: 5%;
+              margin-left: 5%;
+              margin-top: 7%;
               svg {
                 color: $text_color;
                 width: 1.5vw;
@@ -128,7 +130,7 @@ main {
           .username {
             width: 80%;
             color: $text_color;
-            margin-right: 5%;
+            margin-right: 3%;
             p {
               width: 100%;
               display: flex;
@@ -137,7 +139,7 @@ main {
               font-size: 0.9vw;
               text-transform: capitalize;
               span {
-                margin-right: 10%;
+                margin-right: 2%;
               }
               a {
                 text-decoration: none;
@@ -152,7 +154,7 @@ main {
           .avatar {
             width: 20%;
             img {
-              width: 3vw;
+              width: 2.5vw;
               border-radius: 50%;
             }
           }
@@ -200,7 +202,7 @@ main {
       height: 100%;
       padding: 10%;
       margin-top: -3%;
-      background-color: rgba(0, 0, 0, 0.479);
+      background-color: rgba(0, 0, 0, 0.7);
       position: absolute;
       display: flex;
       align-items: flex-end;
@@ -216,7 +218,9 @@ main {
           color: $secondary;
         }
         svg {
-          width: 3vw;
+          width: 2vw;
+          border-radius: 50%;
+          background-color: $text_color;
         }
       }
     }

@@ -187,6 +187,8 @@ main #hero header .right .search form button {
   outline: none;
   border: none;
   margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 7%;
 }
 
 main #hero header .right .search form button svg {
@@ -216,7 +218,7 @@ main #hero header .right .user {
 main #hero header .right .user .username {
   width: 80%;
   color: #fff;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 main #hero header .right .user .username p {
@@ -235,7 +237,7 @@ main #hero header .right .user .username p {
 }
 
 main #hero header .right .user .username p span {
-  margin-right: 10%;
+  margin-right: 2%;
 }
 
 main #hero header .right .user .username p a {
@@ -253,7 +255,7 @@ main #hero header .right .user .avatar {
 }
 
 main #hero header .right .user .avatar img {
-  width: 3vw;
+  width: 2.5vw;
   border-radius: 50%;
 }
 
@@ -303,7 +305,7 @@ main #hero .trending-modal {
   height: 100%;
   padding: 10%;
   margin-top: -3%;
-  background-color: rgba(0, 0, 0, 0.479);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,7 +332,9 @@ main #hero .trending-modal .close:hover {
 }
 
 main #hero .trending-modal .close svg {
-  width: 3vw;
+  width: 2vw;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 main #everything,

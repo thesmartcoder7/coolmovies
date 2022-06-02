@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Trending:
+class Movie:
     def __init__(self, title, id, overview, poster_path, backdrop_path):
         self.name = title
         self.id = id
