@@ -9,6 +9,7 @@ psycopg2 = "*"
 requests = "*"
 django-crispy-forms = "*"
 python-dotenv = "*"
+pillow = "*"
 
 [dev-packages]
 
