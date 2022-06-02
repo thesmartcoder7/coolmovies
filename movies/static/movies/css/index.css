@@ -62,6 +62,13 @@ main .cta h1 {
   font-weight: 600;
 }
 
+main .cta h2 {
+  margin-top: 2%;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
 main .cta .sign-in-up {
   width: 100%;
   margin-top: 5%;
