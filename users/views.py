@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .forms import UserSignupForm
+from .forms import *
 from django.contrib import messages
 
 
@@ -7,10 +7,8 @@ from django.contrib import messages
 
 def signup(request):
     if request.method == 'POST':
-        print('\n\n the code gets inside post check \n\n')
         form = UserSignupForm(request.POST)
         if form.is_valid():
-            print('\n\n the code gets inside the if valid function \n\n')
             username = form.cleaned_data.get('username')
             form.save()
             messages.success(request, f"Thank you, {username}. Your accout has been successfuly created! Login to continue...")

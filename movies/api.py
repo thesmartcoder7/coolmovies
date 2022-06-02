@@ -1,7 +1,7 @@
 import requests
 import os
 from dotenv import load_dotenv, find_dotenv
-from .models import *
+from .models import Movie, Show
 
 
 load_dotenv(find_dotenv())
