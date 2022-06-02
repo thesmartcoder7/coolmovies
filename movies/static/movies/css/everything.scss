@@ -140,13 +140,28 @@ main {
               text-transform: capitalize;
               span {
                 margin-right: 2%;
+                transition: 0.2s ease-in-out;
               }
               a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
                 text-decoration: none;
                 color: $primary;
-                font-weight: 600;
+                font-weight: 800;
                 &:hover {
                   color: $secondary;
+                }
+                svg {
+                  width: 1.5vw;
+                  padding: 0 5%;
+                  transition: 0.2s ease-in-out;
+                  &:hover {
+                    transition: 0.5s ease-in-out;
+                    transform: rotate(90deg);
+                    color: $primary;
+                  }
                 }
               }
             }
@@ -205,9 +220,10 @@ main {
       background-color: rgba(0, 0, 0, 0.7);
       position: absolute;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
       display: none;
+
       .close {
         color: $primary;
         position: absolute;

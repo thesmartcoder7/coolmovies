@@ -238,16 +238,42 @@ main #hero header .right .user .username p {
 
 main #hero header .right .user .username p span {
   margin-right: 2%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 main #hero header .right .user .username p a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
   color: #e50914;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 main #hero header .right .user .username p a:hover {
   color: #e50914c7;
+}
+
+main #hero header .right .user .username p a svg {
+  width: 1.5vw;
+  padding: 0 5%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+main #hero header .right .user .username p a svg:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #e50914;
 }
 
 main #hero header .right .user .avatar {
@@ -310,9 +336,9 @@ main #hero .trending-modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
