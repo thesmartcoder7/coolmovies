@@ -1,11 +1,20 @@
 import requests
+import os
+from dotenv import load_dotenv, find_dotenv
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 import random
 from .models import Trending
 
+
+
+load_dotenv(find_dotenv())
+
+api_key = os.getenv('API_KEY')
+
+
 def get_trending():
-    response = requests.get(url='https://api.themoviedb.org/3/trending/all/week?api_key=b7c72ad37773a8eb3a0254f31fafb0fd')
+    response = requests.get(url=f'https://api.themoviedb.org/3/trending/all/week?api_key={api_key}')
     response.raise_for_status()
     mixed = response.json()['results']
     results = []
@@ -18,7 +27,7 @@ def get_trending():
 
 
 def get_upcoming():
-    response = requests.get(url='https://api.themoviedb.org/3/movie/upcoming?api_key=b7c72ad37773a8eb3a0254f31fafb0fd&language=en-US&page=1')
+    response = requests.get(url=f'https://api.themoviedb.org/3/movie/upcoming?api_key={api_key}&language=en-US&page=1')
     response.raise_for_status()
     mixed = response.json()['results']
     results = []
@@ -32,7 +41,7 @@ def get_upcoming():
 
 def get_trailer(id):
 
-    response = requests.get(url='https://api.themoviedb.org/3/movie/{}/videos?api_key=b7c72ad37773a8eb3a0254f31fafb0fd&language=en-US'.format(str(id)))
+    response = requests.get(url=f'https://api.themoviedb.org/3/movie/{str(id)}/videos?api_key={api_key}&language=en-US')
     response.raise_for_status()
     items = response.json()['results']
     video_key = None
@@ -44,7 +53,7 @@ def get_trailer(id):
 
 
 def get_top_shows():
-    response = requests.get(url='https://api.themoviedb.org/3/tv/top_rated?api_key=b7c72ad37773a8eb3a0254f31fafb0fd&language=en-US&page=1')
+    response = requests.get(url=f'https://api.themoviedb.org/3/tv/top_rated?api_key={api_key}&language=en-US&page=1')
     response.raise_for_status()
     mixed = response.json()['results']
     results = []
