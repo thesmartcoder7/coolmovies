@@ -22,7 +22,7 @@
         <header>
           <div class="left">
             <div class="logo">
-              <a href="">
+              <a href="{% url 'movies_home' %}">
                 <img
                   src="{% static 'movies/images/netflix-logo.png' %}"
                   alt="netflix-logo"
@@ -129,6 +129,58 @@
           {% if upcoming %}
           <!--  -->
           {% for item in upcoming %}
+          <!--  -->
+          {% if item.id != trending.id %}
+          <div class="card">
+            <a href="">
+              <img src="{{item.poster}}" alt="{{item.name}}" />
+              <h3>{{item.name}}</h3>
+            </a>
+          </div>
+          {% endif %}
+          <!--  -->
+          {% endfor %}
+          <!--  -->
+          {% endif %}
+        </div>
+      </section>
+
+      <!-- on-air shows section -->
+      <section id="on-air">
+        <div class="category">
+          <hr />
+          <h3>Shows &nbsp; On-Air</h3>
+        </div>
+        <div class="films">
+          {% if on_air %}
+          <!--  -->
+          {% for item in on_air %}
+          <!--  -->
+          {% if item.id != trending.id %}
+          <div class="card">
+            <a href="">
+              <img src="{{item.poster}}" alt="{{item.name}}" />
+              <h3>{{item.name}}</h3>
+            </a>
+          </div>
+          {% endif %}
+          <!--  -->
+          {% endfor %}
+          <!--  -->
+          {% endif %}
+        </div>
+      </section>
+
+      <!-- popular shows section -->
+      <section id="popular">
+        <div class="category">
+          <hr />
+          <h3>Popular &nbsp; Shows</h3>
+        </div>
+        <div class="films">
+          {% if popular %}
+          <!--  -->
+          {% for item in popular %}
           <!--  -->
           {% if item.id != trending.id %}
           <div class="card">

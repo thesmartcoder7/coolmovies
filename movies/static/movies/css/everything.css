@@ -338,14 +338,18 @@ main #hero .trending-modal .close svg {
 }
 
 main #everything,
-main #upcoming {
+main #upcoming,
+main #on-air,
+main #popular {
   width: 100%;
   padding: 3% 7%;
   background-color: #000;
 }
 
 main #everything .category,
-main #upcoming .category {
+main #upcoming .category,
+main #on-air .category,
+main #popular .category {
   width: 100%;
   height: 5vw;
   margin-bottom: 1%;
@@ -362,7 +366,9 @@ main #upcoming .category {
 }
 
 main #everything .category hr,
-main #upcoming .category hr {
+main #upcoming .category hr,
+main #on-air .category hr,
+main #popular .category hr {
   width: 3vw;
   margin-right: 2%;
   outline: none;
@@ -373,12 +379,16 @@ main #upcoming .category hr {
 }
 
 main #everything .category h3,
-main #upcoming .category h3 {
+main #upcoming .category h3,
+main #on-air .category h3,
+main #popular .category h3 {
   font-size: 1.3vw;
 }
 
 main #everything .films,
-main #upcoming .films {
+main #upcoming .films,
+main #on-air .films,
+main #popular .films {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +408,9 @@ main #upcoming .films {
 }
 
 main #everything .films .card,
-main #upcoming .films .card {
+main #upcoming .films .card,
+main #on-air .films .card,
+main #popular .films .card {
   width: 13.5%;
   margin: 2% 1.5%;
   display: -webkit-box;
@@ -420,7 +432,9 @@ main #upcoming .films .card {
 }
 
 main #everything .films .card a,
-main #upcoming .films .card a {
+main #upcoming .films .card a,
+main #on-air .films .card a,
+main #popular .films .card a {
   text-decoration: none;
   color: #fff;
   text-transform: capitalize;
@@ -428,12 +442,16 @@ main #upcoming .films .card a {
 }
 
 main #everything .films .card a:hover,
-main #upcoming .films .card a:hover {
+main #upcoming .films .card a:hover,
+main #on-air .films .card a:hover,
+main #popular .films .card a:hover {
   color: #e50914;
 }
 
 main #everything .films .card a img,
-main #upcoming .films .card a img {
+main #upcoming .films .card a img,
+main #on-air .films .card a img,
+main #popular .films .card a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -443,14 +461,18 @@ main #upcoming .films .card a img {
 }
 
 main #everything .films .card a img:hover,
-main #upcoming .films .card a img:hover {
+main #upcoming .films .card a img:hover,
+main #on-air .films .card a img:hover,
+main #popular .films .card a img:hover {
   margin-top: -3%;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 main #everything .films .card a h3,
-main #upcoming .films .card a h3 {
+main #upcoming .films .card a h3,
+main #on-air .films .card a h3,
+main #popular .films .card a h3 {
   margin-top: 5%;
   font-size: 0.85vw;
   line-height: 1vw;
