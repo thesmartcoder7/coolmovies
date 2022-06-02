@@ -147,7 +147,8 @@ main #hero header .right {
 }
 
 main #hero header .right .search {
-  margin-right: 10%;
+  width: 35%;
+  margin-top: -2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,6 +201,7 @@ main #hero header .right .search form button svg:hover {
 }
 
 main #hero header .right .user {
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,11 +214,13 @@ main #hero header .right .user {
 }
 
 main #hero header .right .user .username {
+  width: 80%;
   color: #fff;
-  margin-right: 15%;
+  margin-right: 5%;
 }
 
 main #hero header .right .user .username p {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,10 +231,11 @@ main #hero header .right .user .username p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-size: 0.9vw;
+  text-transform: capitalize;
 }
 
 main #hero header .right .user .username p span {
-  margin-right: 15%;
+  margin-right: 10%;
 }
 
 main #hero header .right .user .username p a {
@@ -241,6 +246,10 @@ main #hero header .right .user .username p a {
 
 main #hero header .right .user .username p a:hover {
   color: #e50914c7;
+}
+
+main #hero header .right .user .avatar {
+  width: 20%;
 }
 
 main #hero header .right .user .avatar img {

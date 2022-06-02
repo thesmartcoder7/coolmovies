@@ -1,6 +1,6 @@
 import requests
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 import random
 from .models import Trending
 
@@ -61,6 +61,7 @@ def home(request):
     return render(request, 'movies/index.html')
 
 
+@login_required
 def movies(request):
     result = get_trending()
     almost = get_upcoming()

@@ -84,7 +84,8 @@ main {
         align-items: center;
         justify-content: flex-end;
         .search {
-          margin-right: 10%;
+          width: 35%;
+          margin-top: -2%;
           display: flex;
           align-items: center;
           justify-content: flex-end;
@@ -120,19 +121,23 @@ main {
           }
         }
         .user {
+          width: 65%;
           display: flex;
           align-items: center;
           justify-content: flex-end;
           .username {
+            width: 80%;
             color: $text_color;
-            margin-right: 15%;
+            margin-right: 5%;
             p {
+              width: 100%;
               display: flex;
               align-items: center;
               justify-content: flex-end;
               font-size: 0.9vw;
+              text-transform: capitalize;
               span {
-                margin-right: 15%;
+                margin-right: 10%;
               }
               a {
                 text-decoration: none;
@@ -145,6 +150,7 @@ main {
             }
           }
           .avatar {
+            width: 20%;
             img {
               width: 3vw;
               border-radius: 50%;
