@@ -103,7 +103,9 @@
       <section id="everything" class="container">
         <div class="category">
           <hr />
+          {% block trending %}
           <h3>Trending &nbsp; Movies</h3>
+          {% endblock %}
         </div>
         <div class="films">
           {% if everything %}
@@ -131,7 +133,9 @@
       <section id="upcoming" class="container">
         <div class="category">
           <hr />
+          {% block upcoming %}
           <h3>Upcoming &nbsp; Movies</h3>
+          {% endblock %}
         </div>
         <div class="films">
           {% if upcoming %}
@@ -159,7 +163,9 @@
       <section id="top-rated" class="container">
         <div class="category">
           <hr />
+          {% block top_rated %}
           <h3>Top-Rated &nbsp; Shows</h3>
+          {% endblock %}
         </div>
         <div class="films">
           {% if top_rated %}
@@ -187,7 +193,9 @@
       <section id="popular" class="container">
         <div class="category">
           <hr />
+          {% block popular %}
           <h3>Popular &nbsp; Shows</h3>
+          {% endblock %}
         </div>
         <div class="films">
           {% if popular %}
