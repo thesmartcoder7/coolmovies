@@ -45,9 +45,16 @@ def get_trending_movies():
     url = f'https://api.themoviedb.org/3/trending/all/week?api_key={api_key}'
     return get_items(url, 'movies')  
 
-
 def get_upcoming_movies():
     url = f'https://api.themoviedb.org/3/movie/upcoming?api_key={api_key}&language=en-US&page=1'
+    return get_items(url, 'movies')
+
+def get_top_rated_movies():
+    url = f'https://api.themoviedb.org/3/movie/top_rated?api_key={api_key}&language=en-US&page=1'
+    return get_items(url, 'movies')
+
+def get_popular_movies():
+    url = f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en-US&page=1'
     return get_items(url, 'movies')
 
 
