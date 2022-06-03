@@ -58,14 +58,14 @@ $ python3 -m venv virtual ( or your selected virtual enviroment name )
 - Type the following command in your terminal to clone this repository
 
 ```
-git clone https://github.com/thesmartcoder7/coolmovies.git
+git clone https://github.com/thesmartcoder7/netflix-clone.git
 
 ```
 
 If you are using SSH, use the following command
 
 ```
-git clone git@github.com:thesmartcoder7/coolmovies.git
+git clone git@github.com:thesmartcoder7/netflix-clone.git
 ```
 
 When you run the commands successfully, you should have a local version of this repository.
