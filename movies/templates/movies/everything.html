@@ -17,7 +17,7 @@
     <main>
       <section
         id="hero"
-        style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('{{trending.backdrop}}');"
+        style="background-image: linear-gradient(to bottom right, rgba(0,0,0,7), rgba(0,0,0,0.5)), url('{{trending.backdrop}}');"
       >
         <header>
           <div class="left">
@@ -100,7 +100,7 @@
       </section>
 
       <!-- everything section -->
-      <section id="everything">
+      <section id="everything" class="container">
         <div class="category">
           <hr />
           <h3>Trending &nbsp; Movies</h3>
@@ -113,7 +113,9 @@
           {% if item.id != trending.id %}
           <div class="card">
             <a href="">
-              <img src="{{item.poster}}" alt="{{item.name}}" />
+              <div class="image">
+                <img src="{{item.poster}}" alt="{{item.name}}" />
+              </div>
               <h3>{{item.name}}</h3>
             </a>
           </div>
@@ -126,7 +128,7 @@
       </section>
 
       <!-- upcoming movies section -->
-      <section id="upcoming">
+      <section id="upcoming" class="container">
         <div class="category">
           <hr />
           <h3>Upcoming &nbsp; Movies</h3>
@@ -139,7 +141,9 @@
           {% if item.id != trending.id %}
           <div class="card">
             <a href="">
-              <img src="{{item.poster}}" alt="{{item.name}}" />
+              <div class="image">
+                <img src="{{item.poster}}" alt="{{item.name}}" />
+              </div>
               <h3>{{item.name}}</h3>
             </a>
           </div>
@@ -152,7 +156,7 @@
       </section>
 
       <!-- on-air shows section -->
-      <section id="top-rated">
+      <section id="top-rated" class="container">
         <div class="category">
           <hr />
           <h3>Top-Rated &nbsp; Shows</h3>
@@ -165,7 +169,9 @@
           {% if item.id != trending.id %}
           <div class="card">
             <a href="">
-              <img src="{{item.poster}}" alt="{{item.name}}" />
+              <div class="image">
+                <img src="{{item.poster}}" alt="{{item.name}}" />
+              </div>
               <h3>{{item.name}}</h3>
             </a>
           </div>
@@ -178,7 +184,7 @@
       </section>
 
       <!-- popular shows section -->
-      <section id="popular">
+      <section id="popular" class="container">
         <div class="category">
           <hr />
           <h3>Popular &nbsp; Shows</h3>
@@ -191,7 +197,9 @@
           {% if item.id != trending.id %}
           <div class="card">
             <a href="">
-              <img src="{{item.poster}}" alt="{{item.name}}" />
+              <div class="image">
+                <img src="{{item.poster}}" alt="{{item.name}}" />
+              </div>
               <h3>{{item.name}}</h3>
             </a>
           </div>
