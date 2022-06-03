@@ -365,7 +365,7 @@ main #hero .trending-modal .close svg {
 
 main #everything,
 main #upcoming,
-main #on-air,
+main #top-rated,
 main #popular {
   width: 100%;
   padding: 3% 7%;
@@ -374,7 +374,7 @@ main #popular {
 
 main #everything .category,
 main #upcoming .category,
-main #on-air .category,
+main #top-rated .category,
 main #popular .category {
   width: 100%;
   height: 5vw;
@@ -393,7 +393,7 @@ main #popular .category {
 
 main #everything .category hr,
 main #upcoming .category hr,
-main #on-air .category hr,
+main #top-rated .category hr,
 main #popular .category hr {
   width: 3vw;
   margin-right: 2%;
@@ -406,14 +406,14 @@ main #popular .category hr {
 
 main #everything .category h3,
 main #upcoming .category h3,
-main #on-air .category h3,
+main #top-rated .category h3,
 main #popular .category h3 {
   font-size: 1.3vw;
 }
 
 main #everything .films,
 main #upcoming .films,
-main #on-air .films,
+main #top-rated .films,
 main #popular .films {
   width: 100%;
   display: -webkit-box;
@@ -435,7 +435,7 @@ main #popular .films {
 
 main #everything .films .card,
 main #upcoming .films .card,
-main #on-air .films .card,
+main #top-rated .films .card,
 main #popular .films .card {
   width: 13.5%;
   margin: 2% 1.5%;
@@ -459,7 +459,7 @@ main #popular .films .card {
 
 main #everything .films .card a,
 main #upcoming .films .card a,
-main #on-air .films .card a,
+main #top-rated .films .card a,
 main #popular .films .card a {
   text-decoration: none;
   color: #fff;
@@ -469,14 +469,14 @@ main #popular .films .card a {
 
 main #everything .films .card a:hover,
 main #upcoming .films .card a:hover,
-main #on-air .films .card a:hover,
+main #top-rated .films .card a:hover,
 main #popular .films .card a:hover {
   color: #e50914;
 }
 
 main #everything .films .card a img,
 main #upcoming .films .card a img,
-main #on-air .films .card a img,
+main #top-rated .films .card a img,
 main #popular .films .card a img {
   width: 100%;
   -o-object-fit: cover;
@@ -488,7 +488,7 @@ main #popular .films .card a img {
 
 main #everything .films .card a img:hover,
 main #upcoming .films .card a img:hover,
-main #on-air .films .card a img:hover,
+main #top-rated .films .card a img:hover,
 main #popular .films .card a img:hover {
   margin-top: -3%;
   -webkit-transition: 0.3s ease-in-out;
@@ -497,7 +497,7 @@ main #popular .films .card a img:hover {
 
 main #everything .films .card a h3,
 main #upcoming .films .card a h3,
-main #on-air .films .card a h3,
+main #top-rated .films .card a h3,
 main #popular .films .card a h3 {
   margin-top: 5%;
   font-size: 0.85vw;

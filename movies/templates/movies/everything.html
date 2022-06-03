@@ -152,15 +152,15 @@
       </section>
 
       <!-- on-air shows section -->
-      <section id="on-air">
+      <section id="top-rated">
         <div class="category">
           <hr />
-          <h3>Shows &nbsp; On-Air</h3>
+          <h3>Top-Rated &nbsp; Shows</h3>
         </div>
         <div class="films">
-          {% if on_air %}
+          {% if top_rated %}
           <!--  -->
-          {% for item in on_air %}
+          {% for item in top_rated %}
           <!--  -->
           {% if item.id != trending.id %}
           <div class="card">

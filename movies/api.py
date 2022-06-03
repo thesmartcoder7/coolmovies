@@ -55,8 +55,8 @@ def get_popular_shows():
     url = f'https://api.themoviedb.org/3/tv/popular?api_key={api_key}&language=en-US&page=1'
     return get_items(url, 'shows')
 
-def get_shows_onair():
-    url = f'https://api.themoviedb.org/3/tv/on_the_air?api_key={api_key}&language=en-US&page=1'
+def get_top_rated():
+    url = f'https://api.themoviedb.org/3/tv/top_rated?api_key={api_key}&language=en-US&page=1'
     return get_items(url, 'shows')
 
 
