@@ -1,0 +1,34 @@
+{% load static %}
+<!--  -->
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'users/css/signup.css' %}" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'movies/images/netflix.png' %}"
+      type="image/x-icon"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-content">
+        <h1>Update your Account</h1>
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <!--  -->
+          {{u_form|crispy}}
+          <!--  -->
+          {{p_form|crispy}}
+          <!--  -->
+          <input class="submit" type="submit" value="Update" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

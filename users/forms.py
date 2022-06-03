@@ -19,7 +19,7 @@ class UserSignupForm(UserCreationForm):
 
 
 
-class UseUpdateForm(forms.ModelForm):
+class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
 
     class Meta:
