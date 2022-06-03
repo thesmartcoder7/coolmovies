@@ -13,12 +13,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 
-let modalAutoplay = 0;
-function autplayState() {
-  if (modalPlayer.style.display == "flex") {
-    modalAutoplay = 1;
-  }
-}
 
 var player;
 
