@@ -2,8 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -14,7 +13,6 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/netflix-background.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netflix-background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -25,102 +23,57 @@ body {
 main {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 main #hero {
   padding: 3%;
   width: 100%;
   min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: scroll;
   position: relative;
 }
-
 main #hero header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 main #hero header .left {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
-
 main #hero header .left .logo {
   width: 25%;
 }
-
 main #hero header .left .logo img {
   width: 8vw;
 }
-
 main #hero header .left .nav {
   width: 75%;
 }
-
 main #hero header .left .nav ul {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   list-style: none;
 }
-
 main #hero header .left .nav ul li {
   margin: 0 4%;
 }
-
 main #hero header .left .nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -128,50 +81,27 @@ main #hero header .left .nav ul li a {
   font-weight: 500;
   letter-spacing: 0.05vw;
 }
-
 main #hero header .left .nav ul li a:hover {
   color: #e50914;
 }
-
 main #hero header .right {
   width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-
 main #hero header .right .search {
   width: auto;
   margin-top: -2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-
 main #hero header .right .search form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-
 main #hero header .right .search form input {
   background-color: transparent;
   outline: none;
@@ -181,7 +111,6 @@ main #hero header .right .search form input {
   color: #fff;
   font-size: 0.9vw;
 }
-
 main #hero header .right .search form button {
   background-color: transparent;
   outline: none;
@@ -190,111 +119,74 @@ main #hero header .right .search form button {
   margin-left: 5%;
   margin-top: 7%;
 }
-
 main #hero header .right .search form button svg {
   color: #fff;
   width: 1.5vw;
   height: 1.5vw;
   cursor: pointer;
 }
-
 main #hero header .right .search form button svg:hover {
   color: #e50914;
 }
-
 main #hero header .right .user {
   width: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-
 main #hero header .right .user .username {
   width: 80%;
   color: #fff;
   margin-right: 3%;
 }
-
 main #hero header .right .user .username p {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 0.9vw;
   text-transform: capitalize;
 }
-
 main #hero header .right .user .username p span {
   margin-right: 2%;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 main #hero header .right .user .username p a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #e50914;
   font-weight: 800;
 }
-
 main #hero header .right .user .username p a:hover {
-  color: #e50914c7;
+  color: rgba(229, 9, 20, 0.7803921569);
 }
-
 main #hero header .right .user .username p a svg {
   width: 1.5vw;
   padding: 0 5%;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 main #hero header .right .user .username p a svg:hover {
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   color: #e50914;
 }
-
 main #hero header .right .user .avatar {
   width: 20%;
 }
-
 main #hero header .right .user .avatar img {
   width: 2.5vw;
   border-radius: 50%;
 }
-
 main #hero .hero-content {
   padding: 8% 5%;
   color: #fff;
 }
-
 main #hero .hero-content h1 {
   width: 70%;
   font-size: 3.8vw;
 }
-
 main #hero .hero-content h2 {
   margin-top: 2%;
   width: 50%;
@@ -302,11 +194,9 @@ main #hero .hero-content h2 {
   font-size: 1.2vw;
   line-height: 2.5vw;
 }
-
 main #hero .hero-content .buttons {
   margin-top: 2%;
 }
-
 main #hero .hero-content .buttons button,
 main #hero .hero-content .buttons a {
   background-color: #e50914;
@@ -320,12 +210,10 @@ main #hero .hero-content .buttons a {
   cursor: pointer;
   border-radius: 0.3vw;
 }
-
 main #hero .hero-content .buttons button:hover,
 main #hero .hero-content .buttons a:hover {
-  background-color: #e50914c7;
+  background-color: rgba(229, 9, 20, 0.7803921569);
 }
-
 main #hero .trending-modal {
   width: 100%;
   height: 100%;
@@ -333,18 +221,11 @@ main #hero .trending-modal {
   margin-top: -3%;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   display: none;
 }
-
 main #hero .trending-modal .close {
   color: #e50914;
   position: absolute;
@@ -352,39 +233,28 @@ main #hero .trending-modal .close {
   right: 15%;
   cursor: pointer;
 }
-
 main #hero .trending-modal .close:hover {
-  color: #e50914c7;
+  color: rgba(229, 9, 20, 0.7803921569);
 }
-
 main #hero .trending-modal .close svg {
   width: 2vw;
   border-radius: 50%;
   background-color: #fff;
 }
-
 main .container {
   width: 100%;
   padding: 3% 7%;
   background-color: #000;
 }
-
 main .container .category {
   width: 100%;
   height: 5vw;
   margin-bottom: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   color: #fff;
 }
-
 main .container .category hr {
   width: 3vw;
   margin-right: 2%;
@@ -394,62 +264,37 @@ main .container .category hr {
   height: 0.15vw;
   background-color: #e50914;
 }
-
 main .container .category h3 {
   font-size: 1.3vw;
 }
-
 main .container .films {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
 main .container .films .card {
   width: 15%;
   margin: 2% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   border-radius: 0.3vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 main .container .films .card a {
   text-decoration: none;
   color: #fff;
   text-transform: capitalize;
   text-align: center;
 }
-
 main .container .films .card a:hover {
   color: #e50914;
 }
-
 main .container .films .card a .image {
   height: 18vw;
   -o-object-fit: cover;
@@ -457,64 +302,47 @@ main .container .films .card a .image {
   overflow: hidden;
   border-radius: 0.3vw;
 }
-
 main .container .films .card a .image img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.3vw;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 main .container .films .card a .image img:hover {
   margin-top: -3%;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 main .container .films .card a h3 {
   margin-top: 5%;
   font-size: 0.85vw;
   line-height: 1vw;
   font-weight: 500;
 }
-
 main footer {
   width: 100%;
   background-color: #000;
   padding: 5% 7%;
 }
-
 main footer hr {
   outline: none;
   border: none;
   height: 0.1vw;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   margin: 7% 0 3% 0;
 }
-
 main footer .main {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 main footer .main div {
   width: 25%;
 }
-
 main footer .main div img {
   width: 7vw;
 }
-
 main footer .main div p {
   font-size: 0.9vw;
   color: #fff;
@@ -522,14 +350,11 @@ main footer .main div p {
   text-transform: capitalize;
   margin: 5% 0;
 }
-
 main footer .copyright {
   padding-top: 2%;
   text-align: center;
   color: #fff;
 }
-
 main footer .copyright .year {
   color: #fff;
-}
-/*# sourceMappingURL=everything.css.map */
+}/*# sourceMappingURL=everything.css.map */
