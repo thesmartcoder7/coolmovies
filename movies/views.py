@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from .api import * 
+from .api import *
 import random
-
 
 
 # Create your views here.
@@ -29,19 +28,38 @@ def all(request):
 
     selected = result[0]
     key = get_trailer(selected.id, 'movies')
-    
-    for i in range(13):
-        everything.append(result[i])
 
-    for i in range(12):
-        popular.append(all_popular[i])
-        if almost[i] not in everything:
-            upcoming.append(almost[i])
-    
+    if len(result) > 13:
+        for i in range(13):
+            try:
+                everything.append(result[i])
+            except:
+                pass
+    else:
+        for i in range(7):
+            try:
+                everything.append(result[i])
+            except:
+                pass
+
+    if len(all_popular) > 12:
+        for i in range(12):
+            try:
+                popular.append(all_popular[i])
+                if almost[i] not in everything:
+                    upcoming.append(almost[i])
+            except:
+                pass
+    else:
+        for i in range(6):
+            popular.append(all_popular[i])
+            if almost[i] not in everything:
+                upcoming.append(almost[i])
+
     for i in range(12):
         if all_top[i] not in all_popular:
             top_rated.append(all_top[i])
-    
+
     context = {
         'trending': selected,
         'trailer': key,
@@ -72,7 +90,7 @@ def movies(request):
 
     selected = result[0]
     key = get_trailer(selected.id, 'movies')
-    
+
     for i in range(13):
         everything.append(result[i])
 
@@ -83,11 +101,11 @@ def movies(request):
     for i in range(12):
         if all_popular[i] not in everything:
             popular.append(almost[i])
-    
+
     for i in range(12):
         if all_top[i] not in everything:
             top_rated.append(all_top[i])
-    
+
     context = {
         'trending': selected,
         'trailer': key,
@@ -121,7 +139,7 @@ def tv(request):
         if check_trailer(item.id, 'tv'):
             selected = item
     key = get_trailer(selected.id, 'tv')
-    
+
     for i in range(12):
         everything.append(result[i])
 
@@ -129,7 +147,7 @@ def tv(request):
         popular.append(all_popular[i])
         if almost[i] not in everything:
             upcoming.append(almost[i])
-    
+
     for i in range(12):
         if all_top[i] not in all_popular:
             top_rated.append(all_top[i])
@@ -143,7 +161,3 @@ def tv(request):
         'top_rated': top_rated
     }
     return render(request, 'movies/series.html', context)
-
-
-
-
