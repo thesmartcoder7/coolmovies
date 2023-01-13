@@ -77,10 +77,37 @@ WSGI_APPLICATION = 'netflix.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# Database settings
+# for mysql ( install mysqlclient )
+# --------------------------------
+# DATABASES = {
+#     'default': {
+#         # for postgres, use
+#         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.getenv('DB_NAME'),
+#         'USER': os.getenv('DB_USER'),
+#         'PASSWORD': os.getenv('DB_PASSWORD'),
+#     }
+# }
+
+# for postgres(install psycopy2 or psycopg2 binary)
+# -------------
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.getenv('DB_NAME'),
+#         'USER': os.getenv('DB_USER'),
+#         'PASSWORD': os.getenv('DB_PASSWORD'),
+#     }
+# }
+
+# for sqlite3 ( install nothing. this ships natively with django )
+# --------------
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'netflix',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR/'db,sqlite3'
     }
 }
 
