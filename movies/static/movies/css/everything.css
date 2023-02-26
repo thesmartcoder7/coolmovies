@@ -285,6 +285,7 @@ main .container .films .card {
   border-radius: 0.3vw;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
 main .container .films .card a {
   text-decoration: none;
