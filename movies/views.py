@@ -68,6 +68,7 @@ def all(request):
         'popular': popular,
         'top_rated': top_rated
     }
+
     return render(request, 'movies/everything.html', context)
 
 
