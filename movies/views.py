@@ -4,13 +4,32 @@ from .api import *
 import random
 
 
-# Create your views here.
 def home(request):
+    """
+    Renders the home page.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered response.
+
+    """
     return render(request, 'movies/index.html')
 
 
 @login_required
 def all(request):
+    """
+    Renders the page displaying all movies and TV shows.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered response.
+
+    """
     result = get_trending_movies()
     almost = get_upcoming_movies()
     all_popular = get_popular_shows()
@@ -74,6 +93,16 @@ def all(request):
 
 @login_required
 def movies(request):
+    """
+    Renders the page displaying movies.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered response.
+
+    """
     result = get_trending_movies()
     almost = get_upcoming_movies()
     all_top = get_top_rated_movies()
@@ -120,6 +149,16 @@ def movies(request):
 
 @login_required
 def tv(request):
+    """
+    Renders the page displaying TV shows.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered response.
+
+    """
     result = get_popular_shows()
     almost = get_top_rated_shows()
     all_popular = get_popular_shows()
